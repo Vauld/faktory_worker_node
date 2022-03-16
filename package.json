@@ -1,6 +1,6 @@
 {
-  "name": "faktory-worker",
-  "version": "5.0",
+  "name": "@vauld/faktory-worker",
+  "version": "5.0.0",
   "description": "A faktory worker framework for node apps",
   "type": "commonjs",
   "main": "./lib/faktory.js",
@@ -34,7 +34,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jbielick/faktory_worker_node"
+    "url": "https://github.com/Vauld/faktory_worker_node"
   },
   "bin": {
     "faktory-work": "bin/faktory-work",
