@@ -1,12 +1,16 @@
 {
   "name": "faktory-worker",
-  "version": "4.2.1",
+  "version": "5.0.1",
   "description": "A faktory worker framework for node apps",
   "type": "commonjs",
   "main": "./lib/faktory.js",
   "types": "./lib/faktory.d.ts",
   "author": "Josh Bielick <jbielick@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vauld/faktory_worker_node"
+  },
   "scripts": {
     "watch": "npm run build -- -w",
     "build": "npm run clean && tsc",
