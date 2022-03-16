@@ -1,4 +1,4 @@
-name: NPM Release
+name: Package
 on:
   release:
     types: [created]
@@ -10,10 +10,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "14.x"
-          registry-url: "https://registry.npmjs.org"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@Vauld"
       - run: npm install
+      - run: npm run build
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      # update package name
-      # publish again
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
