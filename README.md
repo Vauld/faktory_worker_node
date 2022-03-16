@@ -51,7 +51,7 @@ const faktory = require("faktory-worker");
   await client.close(); // reuse client if possible! remember to disconnect!
 })().catch((e) => console.error(e));
 ```
-faktory link:
+faktory changelog:
 [https://github.com/contribsys/faktory/blob/main/Changes.md#160](url)
 
 
